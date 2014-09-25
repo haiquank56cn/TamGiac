@@ -10,11 +10,8 @@ public class Triangle {
 	}
 
 	public void checkTriangle() {
-		if (a1 <=0 || a2 <=0 || a3 <=0)
-			System.out.println("NotAtriangle");
-		else if (a1 + a2 <= a3 || a1 + a3 <= a2 || a2 + a3 <= a1)
-			System.out.println("NotATriangle");
-		else if (a1 == a2 || a1 == a3 || a2 == a3)
+	
+		 if (a1 == a2 || a1 == a3 || a2 == a3)
 			System.out.println("Isosceles");
 		else if (a1 == a2 && a2 == a3)
 			System.out.println("Equilateral");
@@ -22,7 +19,7 @@ public class Triangle {
 				|| a2 * a2 + a3 * a3 == a1 * a1)
 			System.out.println("Right Triangle");
 		else
-			System.out.println("Scalene");
+			System.out.println("NotATriangle");
 	}
 
 }
